@@ -1,0 +1,384 @@
+body {
+    font-family: "Ubuntu", sans-serif;
+    
+   
+    font-size: larger;
+    color: black;
+    background-image: url("brandon-morgan-102110-unsplash.jpg");
+   
+    transition: background-color .5s;
+    /*background-color: orange;*/
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: 100%;
+} 
+
+/*.icon1 {
+    width: 35px;
+    height: 35px;
+    
+    background-color: rgb(216, 37, 127);
+    padding-top: 20px;
+}*/
+
+/*body {
+    font-family: "Lato", sans-serif;
+    transition: background-color .5s;
+}*/
+
+/*SIDENAV*/
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    /*background-color: #111;*/
+    background-color: #332626;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 130px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #dcd7f8;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f050c0;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/*CONTACTFORM*/
+
+.form-control:focus {
+    border-color: #f594e0;
+    box-shadow: 0 0 8px #f5cbe3;
+}
+.contact-modal {
+    width: 600px;
+    padding: 50px;
+    margin: 30px auto;
+}
+.contact-modal h4 {
+    font-size: 26px;
+    display: inline-block;
+}
+.contact-modal .form-control, .contact-modal .btn  {
+    min-height: 38px;
+    border-radius: 1px;
+    outline: none;
+}
+.contact-modal .btn-primary {
+    min-width: 100px;
+    background: #ec599e;
+    border: none;
+}
+.contact-modal .btn-primary:hover {
+    background: #eb1680;
+}
+.contact-modal .btn-primary:focus {
+    box-shadow: 0 0 8px rgba(231, 188, 208, 0.6);
+}
+.contact-modal .btn-link {
+    color: #f189db;
+}
+.contact-modal label {
+    opacity: 0.9;
+    font-weight: normal;
+    font-size: 95%;
+}
+.contact-modal textarea {
+    resize: vertical;
+}
+.contact-modal.modal-dialog {
+    width: 480px;
+}
+.contact-modal .modal-header {
+    padding: 20px 35px 14px;
+}
+.contact-modal .modal-content {
+    border-radius: 1px;
+}
+.contact-modal .close {
+    position: absolute;
+    right: 35px;
+    top: 25px;
+}
+.contact-modal .modal-body {
+    padding: 20px 35px 35px;
+}
+.hint-text {
+    opacity: 0.8;
+}
+.trigger-btn {
+    display: inline-block;
+    margin: 100px auto;
+}
+
+/*SEARCH*/
+
+  .search{
+    width: 20rem;
+    margin-top: -3%;
+    margin-left: 20%;
+  
+    /*margin: 10rem auto;*/
+    text-align: right;
+    position: relative;
+  }
+  .search-box{
+    border: none;
+    border: 4px solid transparent;
+    border-radius: 2px;
+    font-size: 2rem;
+    width: 8rem;
+    padding: 0.25rem;
+    transition: width 0.3s;
+    -webkit-transition: width 0.3s;}
+  .search-box:focus{
+    width: 100%;
+    outline: none;
+    /*border: 4px solid #08A1B6;*/
+  }
+  .search-btn {
+    height: 100%;
+    width: 4em;
+    margin-top: -2em;
+    position: absolute;
+    top: 50%;
+    right: 0.5rem;
+    
+    opacity: 0.2;
+    background-color: transparent;
+    border: 0;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAQAAAAAYLlVAAACnElEQVR4AcXZsUsbYRjH8e+dh2s1SyAGJwMJuDj1BIcEhJQIOnTq5F+QOf0jIq79A7oFh7aYyVBEkaZDC3awECc1AUXRIqUQotfFocnjJe/dk+b9PKP65Md7z13ee3Uwk2SNHKmngs5TnbDLJQqjA+RYZ4OXuDzvkSYf+cAJ44fPAYFhHeAzVhlqBBGrRoax8KjSJYhRXap4KCVoECiqQQKFLC0CZbXIElOBOwJ9cUchzm2Y5QsveN4tdfY4o00HSDHHPKuUmOV5v/D5SSSJ0MXfIY+HBB55dkIvRIIIvJDR28dnFJ/9kHH0MFaVDehRxlSZnuxAFUMZunKQKBJFUQ4wXTIYqcmPZ5GoFmUEahjw5eJTJI6ivBD4jCS/csrEVZZfU4yQk5OPhrwjcoRygQ0GVdCQf73OUEfisaMkHk1HDJHkYeDX82jlBzo+kCSEyxruwDP/EK1DbsWnhHDFgNTpodWjLgY9NECKfnvoyS4p8wBngN5Z/ABtQK8dP0AH0OuYB5iMqfAAMque7HJtHmAOPdnlxjzAPHqyy5V5gFX0ZJfj8AAn9CvhoeVRol8zPMAuj/xrlhW0Vpg1D3ApflhGR3b4wTlDvI24i4u+w9y0uyVrM213U1qxuy2/Z8bui8m23VezgGW7L6cBLdIWXs9FBAsHFCLCJI9opFMKXEzkkEp/IbK0bEdI0LARQRzVWoigPKy+Z5tlWooIiuP6NhVmAEiPNwLkqHDEw5CGx2wyDQDRI8T7l80U19xwxTFNmpwzKM1nFsyeCw7jFymCAxYjrHDp8r9cUOCUYRZ4Bw6AxVV47QJYXIVXLliNsOSC1Qh/XLAa4ZuDmmIcH1l2AaytwhZfmaAkn/qOb7eYBofJekOJJX7znfccAvwFyB3OeNys7d4AAAAASUVORK5CYII=');
+  }
+  .search-btn:hover{
+    outline: none;
+    opacity: 0.4;
+    cursor: pointer;
+  }
+  .search-btn:focus{
+    outline: none;
+    opacity: 0.6;
+  }
+    
+/*TEXTCONTACT*/
+
+  .textcontact {
+    text-align: center;
+    font-size: 70px;
+    color:#f7a5d4;
+  }
+
+/*TEXT*/
+
+.text {
+    text-align: center;
+    font-size: 70px;
+    color: #f7a5d4;
+}
+
+/* unvisited link */
+.text a:link {
+    color: #f7a5d4;
+    text-decoration:none;
+}
+
+/* visited link */
+.text a:visited {
+    colo: #f7a5d4;
+    text-decoration:none;
+}
+
+/* mouse over link */
+.text a:hover {
+    color: #aaaff3;
+    text-decoration:none;
+}
+
+/*selected link*/ 
+.text a:active {
+    color: #f7a5d4;
+}
+
+/*PRODUCTS*/
+
+ .contprod{
+    height: 350px;
+    width: 800px;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    padding: 10px;
+    /*background-color: #f1f3fa;*/
+    /*opacity: 0.8;*/
+    /*border: 1px solid #0000ff;*/
+}
+
+.beer{
+    height: 225px;
+    width: 225px;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    /*background-color: #ccd5f7;*/
+}
+
+.wine{
+    height: 225px;
+    width: 225px;
+    position: absolute;
+    top: 5%;
+    left: 35%;
+    /*background-color: #ccd5f7;*/
+}
+
+.liquors{
+    height: 225px;
+    width: 225px;
+    position: absolute;
+    top: 5%;
+    left: 65%;
+    /*background-color: #ccd5f7;*/
+}
+
+/*DROPDOWNMENU*/
+
+.dropbtn {
+    background-color: #aaaff3;
+    color: rgb(68, 39, 39);
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    min-width: 225px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #e7e8f5;
+    min-width: 225px;
+    box-shadow: 0px 8px 16px 0px #aaaff3;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: rgb(78, 61, 64);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #f3a4be;}
+
+
+
+
+
+
+/* CONTACTFORMORIG
+
+
+.form-control:focus {
+    border-color: #8464ca;
+    box-shadow: 0 0 8px #beace3;
+}
+.contact-modal {
+    width: 600px;
+    padding: 50px;
+    margin: 30px auto;
+}
+.contact-modal h4 {
+    font-size: 26px;
+    display: inline-block;
+}
+.contact-modal .form-control, .contact-modal .btn  {
+    min-height: 38px;
+    border-radius: 1px;
+    outline: none;
+}
+.contact-modal .btn-primary {
+    min-width: 100px;
+    background: #ec599e;
+    border: none;
+}
+.contact-modal .btn-primary:hover {
+    background: #eb1680;
+}
+.contact-modal .btn-primary:focus {
+    box-shadow: 0 0 8px rgba(132, 100, 202, 0.6);
+}
+.contact-modal .btn-link {
+    color: #6d45c0;
+}
+.contact-modal label {
+    opacity: 0.9;
+    font-weight: normal;
+    font-size: 95%;
+}
+.contact-modal textarea {
+    resize: vertical;
+}
+.contact-modal.modal-dialog {
+    width: 480px;
+}
+.contact-modal .modal-header {
+    padding: 20px 35px 14px;
+}
+.contact-modal .modal-content {
+    border-radius: 1px;
+}
+.contact-modal .close {
+    position: absolute;
+    right: 35px;
+    top: 25px;
+}
+.contact-modal .modal-body {
+    padding: 20px 35px 35px;
+}
+.hint-text {
+    opacity: 0.8;
+}
+.trigger-btn {
+    display: inline-block;
+    margin: 100px auto;
+}*/
